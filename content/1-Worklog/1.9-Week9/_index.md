@@ -1,57 +1,37 @@
 ---
-title: "Week 9 Worklog"
-date: 2024-01-01
+title: "Worklog"
+date: 2026-07-09
 weight: 1
 chapter: false
-pre: " <b> 1.9. </b> "
+pre: " <b> 1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
-### Week 9 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+**On this page**, you will find an overview of the technical worklog documented during the internship. The logs track weekly progress, hands-on practices, and architectural achievements on Amazon Web Services (AWS) throughout the program.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+The entire program spans a duration of 12 weeks, diving into different core areas of cloud computing each week to build up toward a comprehensive final project production setup:
 
+**Week 1:** [Getting Familiar with AWS and Core Infrastructure Services](1.1-week1/)
 
-### Week 9 Achievements:
+**Week 2:** [Identity & Access Management (IAM) and Virtual Network Environments](1.2-week2/)
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+**Week 3:** [Compute Instance Management, Storage Volumes, and Secure Connections](1.3-week3/)
 
-* Successfully created and configured an AWS Free Tier account.
+**Week 4:** [Managed Relational Databases and Highly Available Architectures](1.4-week4/)
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+**Week 5:** [Cloud Cost Budgets, Infrastructure Monitoring, and DNS Management](1.5-week5/)
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+**Week 6:** [Cloud Migration Strategies and System Performance Optimization](1.6-week6/)
 
-* Used AWS CLI to perform basic operations such as:
+**Week 7:** [Event-Driven Architectures and Data Encryption Management](1.7-week7/)
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+**Week 8:** [Serverless App Applications, API Integrations, and User Authentication](1.8-week8/)
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+**Week 9:** [Managed Container Orchestration and Continuous Deployment Pipelines](1.9-week9/)
+
+**Week 10:** [Infrastructure as Code (IaC) and Threat Monitoring Frameworks](1.10-week10/)
+
+**Week 11:** [Final Project Infrastructure Implementation and Review](1.11-week11/)
+
+**Week 12:** [Final Technical Report Review and Optimization Documentation](1.12-week12/)
