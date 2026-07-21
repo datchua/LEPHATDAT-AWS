@@ -1,19 +1,31 @@
 ---
-title : "Giới thiệu"
-date : 2024-01-01 
+title : "Introduction"
+date : 2026-07-10
 weight : 1
 chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-#### Giới thiệu về VPC Endpoint
+#### Hệ thống Smart Parking
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
++ **Smart Parking System** là giải pháp quản lý bãi đỗ xe thông minh được triển khai trên nền tảng AWS. Hệ thống cho phép người dùng tìm kiếm chỗ đỗ còn trống, đặt chỗ trước, thanh toán trực tuyến và nhận thông báo theo thời gian thực.
++ Hệ thống được xây dựng dựa trên các dịch vụ AWS theo kiến trúc microservices nhằm đảm bảo khả năng mở rộng, tính sẵn sàng cao, bảo mật và quản lý tài nguyên hiệu quả.
 
-#### Tổng quan về workshop
-Trong workshop này, bạn sẽ sử dụng hai VPC.
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
+#### Tổng quan Workshop
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+Trong workshop này, bạn sẽ triển khai hệ thống Smart Parking trên AWS với kiến trúc bảo mật, linh hoạt và có khả năng mở rộng.
+
+Kiến trúc của hệ thống bao gồm các thành phần chính sau:
+
++ **Amazon VPC** cung cấp môi trường mạng riêng và an toàn cho toàn bộ hệ thống.
++ **Application Load Balancer (ALB)** phân phối lưu lượng truy cập đến các dịch vụ backend.
++ **Amazon ECS (Fargate)** triển khai các microservices của Smart Parking, bao gồm Authentication, User, Parking, Booking, Payment và Notification.
++ **Amazon RDS MySQL** lưu trữ dữ liệu của hệ thống như người dùng, bãi đỗ xe, đặt chỗ và lịch sử thanh toán.
++ **Amazon S3** lưu trữ hình ảnh bãi đỗ xe, mã QR và các tệp được tải lên.
++ **AWS Lambda**, **Amazon SNS** và **Amazon SES** xử lý các tác vụ tự động và gửi thông báo đến người dùng.
++ **Amazon CloudWatch** giám sát hiệu năng hệ thống, thu thập nhật ký (logs) và hỗ trợ theo dõi hoạt động của ứng dụng.
++ **AWS IAM** và **AWS Secrets Manager** quản lý quyền truy cập và bảo vệ các thông tin nhạy cảm của hệ thống.
+
+Trong workshop này, bạn sẽ lần lượt triển khai hạ tầng AWS, cài đặt và cấu hình các dịch vụ cần thiết, triển khai ứng dụng Smart Parking và kiểm tra để đảm bảo toàn bộ hệ thống hoạt động ổn định.
+
+![overview](/images/2-Proposal/smart_parking_architecture.jpg)

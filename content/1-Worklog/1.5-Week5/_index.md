@@ -1,9 +1,9 @@
 ---
-title: "Week 5 Worklog"
-date: 2024-01-01
-weight: 5
+title: "Week 1 Worklog"
+date: 2026-07-09
+weight: 1
 chapter: false
-pre: " <b> 1.5. </b> "
+pre: " <b> 1.1. </b> "
 ---
 
 ### Week 5 Objectives:

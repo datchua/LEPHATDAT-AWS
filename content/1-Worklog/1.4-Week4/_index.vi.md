@@ -1,11 +1,10 @@
 ---
-title: "Nhật ký làm việc Tuần 4"
-date: 2024-01-01
-weight: 4
+title: "Nhật ký làm việc Tuần 1"
+date: 2026-07-09
+weight: 1
 chapter: false
-pre: " <b> 1.4. </b> "
+pre: " <b> 1.1. </b> "
 ---
-
 ### Mục tiêu Tuần 4:
 
 * Hiểu cách xây dựng kiến trúc hệ thống có tính sẵn sàng cao (High Availability), khả năng chịu lỗi và tự động co giãn trên AWS.

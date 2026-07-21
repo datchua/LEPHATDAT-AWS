@@ -1,11 +1,10 @@
 ---
 title: "Nhật ký làm việc Tuần 1"
-date: 2024-01-01
+date: 2026-07-09
 weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-
 ### Mục tiêu Tuần 1:
 
 * Kết nối và làm quen với các thành viên trong dự án First Cloud Journey.

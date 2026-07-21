@@ -1,9 +1,9 @@
 ---
-title: "Nhật ký làm việc Tuần 2"
-date: 2024-01-01
-weight: 2
+title: "Nhật ký làm việc Tuần 1"
+date: 2026-07-09
+weight: 1
 chapter: false
-pre: " <b> 1.2. </b> "
+pre: " <b> 1.1. </b> "
 ---
 
 ### Mục tiêu Tuần 2:
